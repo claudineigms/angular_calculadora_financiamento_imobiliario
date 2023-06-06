@@ -1,0 +1,16 @@
+<div class="__container_value_selector">
+  <div class="value_selector_title_and_stallments">
+    <strong>{{title}}</strong>
+    <div class="parcelamento">
+      <span>Parcelas</span>
+      <select id="parcelas" [(ngModel)]="option">
+        <option
+          *ngFor="let number of [].constructor(20);let i = index">
+            {{(i + 1) * multiplier}}
+        </option>
+      </select>
+      <input class="value_selector_valor_parcela" [(ngModel)]="installment">
+    </div>
+  </div>
+  <app-value-selector [(totalAmount)]="totalAmount" [(installmentValue)]="installmentValue" />
+</div>

@@ -1,0 +1,7 @@
+<div class="__container_value_selector">
+  <strong>{{title}}</strong>
+  <div class="value_selector_inputs">
+    <input type="range"  [(ngModel)]="installmentValue" max={{totalAmount}} class="value_selector_range"/>
+    <input type="number" [(ngModel)]="installmentValue" min=0 max={{totalAmount}} class="value_selector_input"/>
+  </div>
+</div>

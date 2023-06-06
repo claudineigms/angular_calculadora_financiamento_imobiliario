@@ -1,0 +1,34 @@
+.__container_value_selector{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.value_selector_valor_parcela{
+  width: 4rem;
+}
+
+.value_selector_title_and_stallments{
+  margin-right: 4%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
+}
+
+.__container_value_selector > strong{
+  display: flex;
+  justify-content: baseline;
+}
+
+.value_selector_inputs{
+  display: flex;
+  align-items: center;
+}
+
+.value_selector_range{
+  width: 65%;
+}
+.value_selector_input{
+  width: 30%;
+}

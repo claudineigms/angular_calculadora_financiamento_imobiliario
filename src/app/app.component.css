@@ -1,0 +1,16 @@
+.__container_calculator{
+  /* border: gray solid 1px; */
+  text-align: center;
+  padding: 0.5rem;
+  width: 85%;
+  margin: 3rem auto;
+  border-radius: 15px;
+  max-width: 650px;
+  min-height: 15rem;
+  background-color: rgba(255, 255, 255,0.4);
+  backdrop-filter: blur(3px);
+}
+
+.title{
+  font-size: 0.8rem;
+}

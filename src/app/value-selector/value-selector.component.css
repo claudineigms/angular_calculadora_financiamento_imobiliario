@@ -1,0 +1,22 @@
+.__container_value_selector{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.__container_value_selector > strong{
+  display: flex;
+  justify-content: baseline;
+}
+
+.value_selector_inputs{
+  display: flex;
+  align-items: center;
+}
+
+.value_selector_range{
+  width: 65%;
+}
+.value_selector_input{
+  width: 30%;
+}
