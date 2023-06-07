@@ -5,8 +5,8 @@
     </span>
     <input type="number" [(ngModel)]="propertyValue">
   </div>
-  <app-value-selector title="Entrada" [(totalAmount)]="propertyValue" [(installmentValue)]="entryValue"/>
-  <app-value-selector-installments title="Parcelas" [(totalAmount)]="propertyValue" [(installmentValue)]="installment" [(multiplier)]="installmentsMultiplyer"/>
-  <app-value-selector-installments title="Balões" [(totalAmount)]="propertyValue" [(installmentValue)]="annualInstallments" [(multiplier)]="annualinstallmentsMultiplyer"/>
+  <app-value-selector title="Entrada" [(totalAmount)]="entryValue + deliveryKeys" [(installmentValue)]="entryValue"/>
+  <app-value-selector-installments title="Parcelas" [(totalAmount)]="installment + deliveryKeys" [(installmentValue)]="installment" [(multiplier)]="installmentsMultiplyer"/>
+  <app-value-selector-installments title="Balões" [(totalAmount)]="annualInstallments + deliveryKeys" [(installmentValue)]="annualInstallments" [(multiplier)]="annualinstallmentsMultiplyer"/>
   <app-value-selector title="Entrega das Chaves" [(totalAmount)]="propertyValue" [(installmentValue)]="deliveryKeys"/>
 </div>

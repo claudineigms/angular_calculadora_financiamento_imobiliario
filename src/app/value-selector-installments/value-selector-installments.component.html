@@ -9,7 +9,7 @@
             {{(i + 1) * multiplier}}
         </option>
       </select>
-      <input class="value_selector_valor_parcela" [(ngModel)]="installment">
+      <input class="value_selector_valor_parcela" [(ngModel)]="installment" disabled>
     </div>
   </div>
   <app-value-selector [(totalAmount)]="totalAmount" [(installmentValue)]="installmentValue" />
