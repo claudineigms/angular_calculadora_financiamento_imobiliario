@@ -8,5 +8,5 @@
   <app-value-selector title="Entrada" [(totalAmount)]="entryValue + deliveryKeys" [(installmentValue)]="entryValue"/>
   <app-value-selector-installments title="Parcelas" [(totalAmount)]="installment + deliveryKeys" [(installmentValue)]="installment" [(multiplier)]="installmentsMultiplyer"/>
   <app-value-selector-installments title="Balões" [(totalAmount)]="annualInstallments + deliveryKeys" [(installmentValue)]="annualInstallments" [(multiplier)]="annualinstallmentsMultiplyer"/>
-  <app-value-selector title="Entrega das Chaves" [(totalAmount)]="propertyValue" [(installmentValue)]="deliveryKeys"/>
+  <app-value-selector title="Entrega das Chaves" [(totalAmount)]="deliveryKeys" [(installmentValue)]="deliveryKeys"/>
 </div>
