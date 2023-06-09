@@ -1,6 +1,6 @@
 {
-  "name": "real_estate_istallment_calculator",
-  "short_name": "real_estate_istallment_calculator",
+  "name": "Calculadora Financiamento Imobiliario",
+  "short_name": "FinImob",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
