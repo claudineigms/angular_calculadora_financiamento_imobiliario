@@ -4,6 +4,7 @@
     <div class="value_selector_inputs">
       <input
         type="number"
+        step="0.01"
         [(ngModel)]="percentage"
         max=100
         disabled={{ValueStatusDisabled}}
@@ -11,6 +12,7 @@
       <input
         class="value_selector_input"
         type="number"
+        step="0,01"
         [(ngModel)]="installmentValue"
         (ngModelChange)="calculatePercentage()"
         disabled={{ValueStatusDisabled}}

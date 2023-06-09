@@ -18,7 +18,7 @@ export class ValueSelectorInstallmentsComponent implements OnInit,AfterContentCh
   @Input()  percentage!: number;
   @Output() percentageChange = new EventEmitter<number>();
   @Input()  maxPercentage!: number|string
-            installment! : number;
+            installment! : number|string;
             option!:number;
 
   ngOnInit(): void {
@@ -32,7 +32,7 @@ export class ValueSelectorInstallmentsComponent implements OnInit,AfterContentCh
   }
 
   ngAfterViewChecked():void{
-    this.installment = (this.totalAmount*(this.percentage/100))/this.option
+    this.installment = ((this.totalAmount*(this.percentage/100))/this.option).toLocaleString("pt-BR",{ style: "currency" , currency:"BRL"});
   }
 }
 

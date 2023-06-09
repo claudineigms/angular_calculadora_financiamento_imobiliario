@@ -5,11 +5,10 @@
 }
 
 .value_selector_valor_parcela{
-  width: 4rem;
+  width: 5.5rem;
 }
 
 .value_selector_title_and_stallments{
-  margin-right: 4%;
   display: flex;
   flex-direction: row;
   position: relative;
