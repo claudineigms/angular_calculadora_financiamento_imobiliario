@@ -4,6 +4,8 @@
   flex-direction: column;
 }
 
+.value_selector
+
 .__container_value_selector > strong{
   display: flex;
   justify-content: baseline;
@@ -15,8 +17,8 @@
 }
 
 .value_selector_range{
-  width: 65%;
+  width: 100%;
 }
 .value_selector_input{
-  width: 30%;
+  width: 100%;
 }

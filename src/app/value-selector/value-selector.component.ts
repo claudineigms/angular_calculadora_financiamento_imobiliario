@@ -7,21 +7,25 @@ import { Component, EventEmitter, Input, Output, AfterContentChecked } from '@an
 })
 export class ValueSelectorComponent implements AfterContentChecked{
   @Input()  title: string = "";
-  @Input()  installmentValue!: number;
-  @Output() installmentValueChange = new EventEmitter<number>();
+  @Input()  ValueBarNgIf: boolean|string= true
+  @Input()  ValueStatusDisabled: boolean|string= false
+
+  @Input()  percentage!: number;
+  @Output()  percentageChange = new EventEmitter<number>();
+  @Input()  maxPercentage!: number|string
   @Input()  totalAmount!: number;
   @Output() totalAmountChange = new EventEmitter<number>();
+            installmentValue!: number;
 
-  ngAfterContentChecked(): void {
-    if (this.installmentValue > this.totalAmount){
-      this.installmentValue = this.totalAmount
-      console.log(this.totalAmount)
-    }
-    this.installmentValueChange.emit(this.installmentValue);
-    this.totalAmountChange.emit(this.totalAmount)
+  calculatePercentage():void{
+    console.log("tes")
+    this.percentage = Number(((this.installmentValue/this.totalAmount)*100).toFixed(5))
+    this.percentageChange.emit(this.percentage)
   }
 
-
-
-
+  ngAfterContentChecked(): void {
+    this.installmentValue = Number((this.totalAmount * (this.percentage / 100)).toFixed(2))
+    this.totalAmountChange.emit(this.totalAmount)
+    this.percentageChange.emit(this.percentage)
+  }
 }

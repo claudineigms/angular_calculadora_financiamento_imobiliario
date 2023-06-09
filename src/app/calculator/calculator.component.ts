@@ -8,27 +8,24 @@ import { OnInit,AfterContentInit,AfterContentChecked,AfterViewChecked } from '@a
 })
 export class CalculatorComponent implements OnInit,AfterContentChecked{
 propertyValue:number = 100000
-entryValue!:number;
-installment!:number;
-annualInstallments!:number
-deliveryKeys:number = 0
+entryValuePercentage:number = 20;
+installmentPercentage:number = 40;
+annualInstallmentsPercentage:number = 20;
+deliveryKeysPercentage:number = 0
+
 installmentsMultiplyer:number = 12
 annualinstallmentsMultiplyer:number = 1
 
 calculateValues():void {
-  this.deliveryKeys = this.propertyValue - this.entryValue - this.installment - this.annualInstallments
+  this.deliveryKeysPercentage = 100 - this.entryValuePercentage - this.installmentPercentage - this.annualInstallmentsPercentage
 }
 
 ngOnInit(): void {
-  this.entryValue = this.propertyValue * .2
-  this.installment = this.propertyValue * .4
-  this.annualInstallments = this.propertyValue * .2
   this.calculateValues()
 }
 
 ngAfterContentChecked(): void {
-  // console.log(this.entryValue)
-  this.deliveryKeys = this.propertyValue - this.entryValue
+  this.deliveryKeysPercentage = this.propertyValue - this.entryValuePercentage
   this.calculateValues()
 }
 }

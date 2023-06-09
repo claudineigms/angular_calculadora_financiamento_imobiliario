@@ -3,14 +3,27 @@
     <strong>{{title}}</strong>
     <div class="parcelamento">
       <span>Parcelas</span>
-      <select id="parcelas" [(ngModel)]="option">
+      <select
+        id="parcelas"
+        [(ngModel)]="option"
+      >
         <option
           *ngFor="let number of [].constructor(20);let i = index">
             {{(i + 1) * multiplier}}
         </option>
       </select>
-      <input class="value_selector_valor_parcela" [(ngModel)]="installment" disabled>
+      <input
+        class="value_selector_valor_parcela"
+        [(ngModel)]="installment"
+        disabled = true
+        >
     </div>
   </div>
-  <app-value-selector [(totalAmount)]="totalAmount" [(installmentValue)]="installmentValue" />
+  <app-value-selector
+    [(totalAmount)]="totalAmount"
+    [(percentage)]="percentage"
+    maxPercentage={{maxPercentage}}
+    ValueBarNgIf={{ValueBarNgIf}}
+    ValueStatusDisabled={{ValueStatusDisabled}}
+  />
 </div>

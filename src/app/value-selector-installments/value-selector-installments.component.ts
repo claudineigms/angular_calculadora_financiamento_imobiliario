@@ -8,12 +8,16 @@ import { Component, EventEmitter, Input, Output, OnInit,AfterContentChecked, Aft
 
 export class ValueSelectorInstallmentsComponent implements OnInit,AfterContentChecked, AfterViewChecked{
   @Input()  title: string = "";
+  @Input()  ValueBarNgIf: boolean|string= false
+  @Input()  ValueStatusDisabled: boolean|string = false
+
   @Input()  multiplier: number = 1;
   @Output() multiplierChange = new EventEmitter<number>();
-  @Input()  installmentValue!: number;
-  @Output() installmentValueChange = new EventEmitter<number>();
   @Input()  totalAmount!: number;
   @Output() totalAmountChange = new EventEmitter<number>();
+  @Input()  percentage!: number;
+  @Output() percentageChange = new EventEmitter<number>();
+  @Input()  maxPercentage!: number|string
             installment! : number;
             option!:number;
 
@@ -22,20 +26,13 @@ export class ValueSelectorInstallmentsComponent implements OnInit,AfterContentCh
   }
 
   ngAfterContentChecked(): void {
-    if (this.installmentValue > this.totalAmount){
-      this.installmentValue = this.totalAmount
-      console.log(this.totalAmount)
-    }
-    this.installmentValueChange.emit(this.installmentValue);
     this.totalAmountChange.emit(this.totalAmount)
     this.multiplierChange.emit(this.multiplier)
+    this.percentageChange.emit(this.percentage)
   }
 
   ngAfterViewChecked():void{
-    console.log(this.installmentValue)
-    console.log(this.option)
-    this.installment = this
-    .installmentValue/this.option
+    this.installment = (this.totalAmount*(this.percentage/100))/this.option
   }
 }
 
