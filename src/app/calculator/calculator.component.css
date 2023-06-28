@@ -14,5 +14,5 @@
 ._calculator_property_value >div{
   display: flex;
   justify-content: space-between;
-  padding: 0 9rem;
+  padding: 0 10%;
 }
