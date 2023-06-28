@@ -1,0 +1,807 @@
+[
+  {
+    "Periodo": "2023/Jun",
+    "Valor": 2725.79,
+    "Mes (%)": "1,37%",
+    "Ano (%)": "3,13%",
+    "Acumulado 12 meses (%)": "7,14%"
+  },
+  {
+    "Periodo": "2023/Mai",
+    "Valor": 2688.94,
+    "Mes (%)": "0,30%",
+    "Ano (%)": "1,73%",
+    "Acumulado 12 meses (%)": "8,83%"
+  },
+  {
+    "Periodo": "2023/Abr",
+    "Valor": 2680.84,
+    "Mes (%)": "0,37%",
+    "Ano (%)": "1,43%",
+    "Acumulado 12 meses (%)": "8,92%"
+  },
+  {
+    "Periodo": "2023/Mar",
+    "Valor": 2671.09,
+    "Mes (%)": "0,32%",
+    "Ano (%)": "1,06%",
+    "Acumulado 12 meses (%)": "9,28%"
+  },
+  {
+    "Periodo": "2023/Fev",
+    "Valor": 2662.47,
+    "Mes (%)": "0,43%",
+    "Ano (%)": "0,73%",
+    "Acumulado 12 meses (%)": "9,18%"
+  },
+  {
+    "Periodo": "2023/Jan",
+    "Valor": 2651.17,
+    "Mes (%)": "0,30%",
+    "Ano (%)": "0,30%",
+    "Acumulado 12 meses (%)": "9,19%"
+  },
+  {
+    "Periodo": "2022/Dez",
+    "Valor": 2643.16,
+    "Mes (%)": "0,38%",
+    "Ano (%)": "9,43%",
+    "Acumulado 12 meses (%)": "9,43%"
+  },
+  {
+    "Periodo": "2022/Nov",
+    "Valor": 2633.22,
+    "Mes (%)": "0,03%",
+    "Ano (%)": "9,02%",
+    "Acumulado 12 meses (%)": "9,56%"
+  },
+  {
+    "Periodo": "2022/Out",
+    "Valor": 2632.38,
+    "Mes (%)": "0,34%",
+    "Ano (%)": "8,98%",
+    "Acumulado 12 meses (%)": "10,56%"
+  },
+  {
+    "Periodo": "2022/Set",
+    "Valor": 2623.42,
+    "Mes (%)": "0,78%",
+    "Ano (%)": "8,61%",
+    "Acumulado 12 meses (%)": "11,26%"
+  },
+  {
+    "Periodo": "2022/Ago",
+    "Valor": 2603.14,
+    "Mes (%)": "1,19%",
+    "Ano (%)": "7,77%",
+    "Acumulado 12 meses (%)": "11,73%"
+  },
+  {
+    "Periodo": "2022/Jul",
+    "Valor": 2572.55,
+    "Mes (%)": "1,12%",
+    "Ano (%)": "6,50%",
+    "Acumulado 12 meses (%)": "11,47%"
+  },
+  {
+    "Periodo": "2022/Jun",
+    "Valor": 2544.17,
+    "Mes (%)": "2,97%",
+    "Ano (%)": "5,33%",
+    "Acumulado 12 meses (%)": "12,88%"
+  },
+  {
+    "Periodo": "2022/Mai",
+    "Valor": 2470.83,
+    "Mes (%)": "0,39%",
+    "Ano (%)": "2,29%",
+    "Acumulado 12 meses (%)": "12,14%"
+  },
+  {
+    "Periodo": "2022/Abr",
+    "Valor": 2461.35,
+    "Mes (%)": "0,70%",
+    "Ano (%)": "1,90%",
+    "Acumulado 12 meses (%)": "13,36%"
+  },
+  {
+    "Periodo": "2022/Mar",
+    "Valor": 2444.3,
+    "Mes (%)": "0,24%",
+    "Ano (%)": "1,19%",
+    "Acumulado 12 meses (%)": "14,19%"
+  },
+  {
+    "Periodo": "2022/Fev",
+    "Valor": 2438.51,
+    "Mes (%)": "0,43%",
+    "Ano (%)": "0,95%",
+    "Acumulado 12 meses (%)": "15,41%"
+  },
+  {
+    "Periodo": "2022/Jan",
+    "Valor": 2428.1,
+    "Mes (%)": "0,52%",
+    "Ano (%)": "0,52%",
+    "Acumulado 12 meses (%)": "15,74%"
+  },
+  {
+    "Periodo": "2021/Dez",
+    "Valor": 2415.45,
+    "Mes (%)": "0,50%",
+    "Ano (%)": "18,16%",
+    "Acumulado 12 meses (%)": "18,16%"
+  },
+  {
+    "Periodo": "2021/Nov",
+    "Valor": 2403.54,
+    "Mes (%)": "0,94%",
+    "Ano (%)": "17,58%",
+    "Acumulado 12 meses (%)": "18,81%"
+  },
+  {
+    "Periodo": "2021/Out",
+    "Valor": 2381.05,
+    "Mes (%)": "0,98%",
+    "Ano (%)": "16,48%",
+    "Acumulado 12 meses (%)": "18,60%"
+  },
+  {
+    "Periodo": "2021/Set",
+    "Valor": 2357.91,
+    "Mes (%)": "1,20%",
+    "Ano (%)": "15,35%",
+    "Acumulado 12 meses (%)": "19,05%"
+  },
+  {
+    "Periodo": "2021/Ago",
+    "Valor": 2329.85,
+    "Mes (%)": "0,95%",
+    "Ano (%)": "13,98%",
+    "Acumulado 12 meses (%)": "18,01%"
+  },
+  {
+    "Periodo": "2021/Jul",
+    "Valor": 2307.92,
+    "Mes (%)": "2,40%",
+    "Ano (%)": "12,90%",
+    "Acumulado 12 meses (%)": "17,14%"
+  },
+  {
+    "Periodo": "2021/Jun",
+    "Valor": 2253.79,
+    "Mes (%)": "2,29%",
+    "Ano (%)": "10,26%",
+    "Acumulado 12 meses (%)": "14,87%"
+  },
+  {
+    "Periodo": "2021/Mai",
+    "Valor": 2203.29,
+    "Mes (%)": "1,47%",
+    "Ano (%)": "7,78%",
+    "Acumulado 12 meses (%)": "12,84%"
+  },
+  {
+    "Periodo": "2021/Abr",
+    "Valor": 2171.33,
+    "Mes (%)": "1,44%",
+    "Ano (%)": "6,22%",
+    "Acumulado 12 meses (%)": "11,44%"
+  },
+  {
+    "Periodo": "2021/Mar",
+    "Valor": 2140.56,
+    "Mes (%)": "1,31%",
+    "Ano (%)": "4,72%",
+    "Acumulado 12 meses (%)": "10,03%"
+  },
+  {
+    "Periodo": "2021/Fev",
+    "Valor": 2112.9,
+    "Mes (%)": "0,71%",
+    "Ano (%)": "3,36%",
+    "Acumulado 12 meses (%)": "8,78%"
+  },
+  {
+    "Periodo": "2021/Jan",
+    "Valor": 2097.92,
+    "Mes (%)": "2,63%",
+    "Ano (%)": "2,63%",
+    "Acumulado 12 meses (%)": "8,48%"
+  },
+  {
+    "Periodo": "2020/Dez",
+    "Valor": 2044.16,
+    "Mes (%)": "1,05%",
+    "Ano (%)": "5,90%",
+    "Acumulado 12 meses (%)": "5,90%"
+  },
+  {
+    "Periodo": "2020/Nov",
+    "Valor": 2022.93,
+    "Mes (%)": "0,77%",
+    "Ano (%)": "4,80%",
+    "Acumulado 12 meses (%)": "5,48%"
+  },
+  {
+    "Periodo": "2020/Out",
+    "Valor": 2007.57,
+    "Mes (%)": "1,37%",
+    "Ano (%)": "4,00%",
+    "Acumulado 12 meses (%)": "4,86%"
+  },
+  {
+    "Periodo": "2020/Set",
+    "Valor": 1980.53,
+    "Mes (%)": "0,32%",
+    "Ano (%)": "2,60%",
+    "Acumulado 12 meses (%)": "3,63%"
+  },
+  {
+    "Periodo": "2020/Ago",
+    "Valor": 1974.3,
+    "Mes (%)": "0,21%",
+    "Ano (%)": "2,28%",
+    "Acumulado 12 meses (%)": "3,66%"
+  },
+  {
+    "Periodo": "2020/Jul",
+    "Valor": 1970.24,
+    "Mes (%)": "0,42%",
+    "Ano (%)": "2,07%",
+    "Acumulado 12 meses (%)": "3,85%"
+  },
+  {
+    "Periodo": "2020/Jun",
+    "Valor": 1962.0,
+    "Mes (%)": "0,48%",
+    "Ano (%)": "1,64%",
+    "Acumulado 12 meses (%)": "4,48%"
+  },
+  {
+    "Periodo": "2020/Mai",
+    "Valor": 1952.55,
+    "Mes (%)": "0,21%",
+    "Ano (%)": "1,15%",
+    "Acumulado 12 meses (%)": "5,44%"
+  },
+  {
+    "Periodo": "2020/Abr",
+    "Valor": 1948.4,
+    "Mes (%)": "0,15%",
+    "Ano (%)": "0,94%",
+    "Acumulado 12 meses (%)": "5,40%"
+  },
+  {
+    "Periodo": "2020/Mar",
+    "Valor": 1945.43,
+    "Mes (%)": "0,16%",
+    "Ano (%)": "0,78%",
+    "Acumulado 12 meses (%)": "5,50%"
+  },
+  {
+    "Periodo": "2020/Fev",
+    "Valor": 1942.41,
+    "Mes (%)": "0,44%",
+    "Ano (%)": "0,63%",
+    "Acumulado 12 meses (%)": "5,77%"
+  },
+  {
+    "Periodo": "2020/Jan",
+    "Valor": 1933.84,
+    "Mes (%)": "0,18%",
+    "Ano (%)": "0,18%",
+    "Acumulado 12 meses (%)": "5,50%"
+  },
+  {
+    "Periodo": "2019/Dez",
+    "Valor": 1930.32,
+    "Mes (%)": "0,65%",
+    "Ano (%)": "5,58%",
+    "Acumulado 12 meses (%)": "5,58%"
+  },
+  {
+    "Periodo": "2019/Nov",
+    "Valor": 1917.81,
+    "Mes (%)": "0,17%",
+    "Ano (%)": "4,90%",
+    "Acumulado 12 meses (%)": "5,05%"
+  },
+  {
+    "Periodo": "2019/Out",
+    "Valor": 1914.6,
+    "Mes (%)": "0,18%",
+    "Ano (%)": "4,72%",
+    "Acumulado 12 meses (%)": "5,12%"
+  },
+  {
+    "Periodo": "2019/Set",
+    "Valor": 1911.08,
+    "Mes (%)": "0,34%",
+    "Ano (%)": "4,53%",
+    "Acumulado 12 meses (%)": "5,17%"
+  },
+  {
+    "Periodo": "2019/Ago",
+    "Valor": 1904.59,
+    "Mes (%)": "0,39%",
+    "Ano (%)": "4,18%",
+    "Acumulado 12 meses (%)": "5,51%"
+  },
+  {
+    "Periodo": "2019/Jul",
+    "Valor": 1897.11,
+    "Mes (%)": "1,02%",
+    "Ano (%)": "3,77%",
+    "Acumulado 12 meses (%)": "5,52%"
+  },
+  {
+    "Periodo": "2019/Jun",
+    "Valor": 1877.87,
+    "Mes (%)": "1,41%",
+    "Ano (%)": "2,71%",
+    "Acumulado 12 meses (%)": "5,96%"
+  },
+  {
+    "Periodo": "2019/Mai",
+    "Valor": 1851.79,
+    "Mes (%)": "0,17%",
+    "Ano (%)": "1,29%",
+    "Acumulado 12 meses (%)": "4,00%"
+  },
+  {
+    "Periodo": "2019/Abr",
+    "Valor": 1848.59,
+    "Mes (%)": "0,24%",
+    "Ano (%)": "1,11%",
+    "Acumulado 12 meses (%)": "5,06%"
+  },
+  {
+    "Periodo": "2019/Mar",
+    "Valor": 1844.09,
+    "Mes (%)": "0,42%",
+    "Ano (%)": "0,87%",
+    "Acumulado 12 meses (%)": "5,16%"
+  },
+  {
+    "Periodo": "2019/Fev",
+    "Valor": 1836.4,
+    "Mes (%)": "0,19%",
+    "Ano (%)": "0,45%",
+    "Acumulado 12 meses (%)": "4,95%"
+  },
+  {
+    "Periodo": "2019/Jan",
+    "Valor": 1832.98,
+    "Mes (%)": "0,26%",
+    "Ano (%)": "0,26%",
+    "Acumulado 12 meses (%)": "4,91%"
+  },
+  {
+    "Periodo": "2018/Dez",
+    "Valor": 1828.25,
+    "Mes (%)": "0,15%",
+    "Ano (%)": "4,82%",
+    "Acumulado 12 meses (%)": "4,82%"
+  },
+  {
+    "Periodo": "2018/Nov",
+    "Valor": 1825.53,
+    "Mes (%)": "0,23%",
+    "Ano (%)": "4,66%",
+    "Acumulado 12 meses (%)": "4,92%"
+  },
+  {
+    "Periodo": "2018/Out",
+    "Valor": 1821.41,
+    "Mes (%)": "0,24%",
+    "Ano (%)": "4,43%",
+    "Acumulado 12 meses (%)": "4,92%"
+  },
+  {
+    "Periodo": "2018/Set",
+    "Valor": 1817.09,
+    "Mes (%)": "0,67%",
+    "Ano (%)": "4,18%",
+    "Acumulado 12 meses (%)": "4,93%"
+  },
+  {
+    "Periodo": "2018/Ago",
+    "Valor": 1805.05,
+    "Mes (%)": "0,40%",
+    "Ano (%)": "3,49%",
+    "Acumulado 12 meses (%)": "4,32%"
+  },
+  {
+    "Periodo": "2018/Jul",
+    "Valor": 1797.94,
+    "Mes (%)": "1,45%",
+    "Ano (%)": "3,08%",
+    "Acumulado 12 meses (%)": "4,52%"
+  },
+  {
+    "Periodo": "2018/Jun",
+    "Valor": 1772.27,
+    "Mes (%)": "0,49%",
+    "Ano (%)": "1,61%",
+    "Acumulado 12 meses (%)": "4,44%"
+  },
+  {
+    "Periodo": "2018/Mai",
+    "Valor": 1763.61,
+    "Mes (%)": "0,23%",
+    "Ano (%)": "1,11%",
+    "Acumulado 12 meses (%)": "6,43%"
+  },
+  {
+    "Periodo": "2018/Abr",
+    "Valor": 1759.56,
+    "Mes (%)": "0,34%",
+    "Ano (%)": "0,88%",
+    "Acumulado 12 meses (%)": "6,31%"
+  },
+  {
+    "Periodo": "2018/Mar",
+    "Valor": 1753.61,
+    "Mes (%)": "0,22%",
+    "Ano (%)": "0,54%",
+    "Acumulado 12 meses (%)": "6,10%"
+  },
+  {
+    "Periodo": "2018/Fev",
+    "Valor": 1749.71,
+    "Mes (%)": "0,15%",
+    "Ano (%)": "0,32%",
+    "Acumulado 12 meses (%)": "5,00%"
+  },
+  {
+    "Periodo": "2018/Jan",
+    "Valor": 1747.12,
+    "Mes (%)": "0,17%",
+    "Ano (%)": "0,17%",
+    "Acumulado 12 meses (%)": "6,13%"
+  },
+  {
+    "Periodo": "2017/Dez",
+    "Valor": 1744.2,
+    "Mes (%)": "0,25%",
+    "Ano (%)": "6,06%",
+    "Acumulado 12 meses (%)": "6,06%"
+  },
+  {
+    "Periodo": "2017/Nov",
+    "Valor": 1739.92,
+    "Mes (%)": "0,23%",
+    "Ano (%)": "5,80%",
+    "Acumulado 12 meses (%)": "6,13%"
+  },
+  {
+    "Periodo": "2017/Out",
+    "Valor": 1736.01,
+    "Mes (%)": "0,25%",
+    "Ano (%)": "5,57%",
+    "Acumulado 12 meses (%)": "6,07%"
+  },
+  {
+    "Periodo": "2017/Set",
+    "Valor": 1731.72,
+    "Mes (%)": "0,08%",
+    "Ano (%)": "5,30%",
+    "Acumulado 12 meses (%)": "5,96%"
+  },
+  {
+    "Periodo": "2017/Ago",
+    "Valor": 1730.33,
+    "Mes (%)": "0,59%",
+    "Ano (%)": "5,22%",
+    "Acumulado 12 meses (%)": "6,04%"
+  },
+  {
+    "Periodo": "2017/Jul",
+    "Valor": 1720.12,
+    "Mes (%)": "1,36%",
+    "Ano (%)": "4,60%",
+    "Acumulado 12 meses (%)": "5,57%"
+  },
+  {
+    "Periodo": "2017/Jun",
+    "Valor": 1697.0,
+    "Mes (%)": "2,41%",
+    "Ano (%)": "3,19%",
+    "Acumulado 12 meses (%)": "5,18%"
+  },
+  {
+    "Periodo": "2017/Mai",
+    "Valor": 1657.02,
+    "Mes (%)": "0,11%",
+    "Ano (%)": "0,76%",
+    "Acumulado 12 meses (%)": "5,83%"
+  },
+  {
+    "Periodo": "2017/Abr",
+    "Valor": 1655.17,
+    "Mes (%)": "0,14%",
+    "Ano (%)": "0,65%",
+    "Acumulado 12 meses (%)": "5,90%"
+  },
+  {
+    "Periodo": "2017/Mar",
+    "Valor": 1652.81,
+    "Mes (%)": "0,13%",
+    "Ano (%)": "0,51%",
+    "Acumulado 12 meses (%)": "5,84%"
+  },
+  {
+    "Periodo": "2017/Fev",
+    "Valor": 1650.73,
+    "Mes (%)": "0,28%",
+    "Ano (%)": "0,38%",
+    "Acumulado 12 meses (%)": "5,94%"
+  },
+  {
+    "Periodo": "2017/Jan",
+    "Valor": 1646.19,
+    "Mes (%)": "0,10%",
+    "Ano (%)": "0,10%",
+    "Acumulado 12 meses (%)": "5,80%"
+  },
+  {
+    "Periodo": "2016/Dez",
+    "Valor": 1644.49,
+    "Mes (%)": "0,31%",
+    "Ano (%)": "5,90%",
+    "Acumulado 12 meses (%)": "5,90%"
+  },
+  {
+    "Periodo": "2016/Nov",
+    "Valor": 1639.37,
+    "Mes (%)": "0,17%",
+    "Ano (%)": "5,57%",
+    "Acumulado 12 meses (%)": "6,08%"
+  },
+  {
+    "Periodo": "2016/Out",
+    "Valor": 1636.64,
+    "Mes (%)": "0,14%",
+    "Ano (%)": "5,39%",
+    "Acumulado 12 meses (%)": "6,12%"
+  },
+  {
+    "Periodo": "2016/Set",
+    "Valor": 1634.28,
+    "Mes (%)": "0,16%",
+    "Ano (%)": "5,24%",
+    "Acumulado 12 meses (%)": "6,41%"
+  },
+  {
+    "Periodo": "2016/Ago",
+    "Valor": 1631.74,
+    "Mes (%)": "0,15%",
+    "Ano (%)": "5,08%",
+    "Acumulado 12 meses (%)": "6,90%"
+  },
+  {
+    "Periodo": "2016/Jul",
+    "Valor": 1629.31,
+    "Mes (%)": "0,98%",
+    "Ano (%)": "4,92%",
+    "Acumulado 12 meses (%)": "6,93%"
+  },
+  {
+    "Periodo": "2016/Jun",
+    "Valor": 1613.43,
+    "Mes (%)": "3,04%",
+    "Ano (%)": "3,90%",
+    "Acumulado 12 meses (%)": "6,82%"
+  },
+  {
+    "Periodo": "2016/Mai",
+    "Valor": 1565.77,
+    "Mes (%)": "0,18%",
+    "Ano (%)": "0,83%",
+    "Acumulado 12 meses (%)": "7,00%"
+  },
+  {
+    "Periodo": "2016/Abr",
+    "Valor": 1562.99,
+    "Mes (%)": "0,09%",
+    "Ano (%)": "0,65%",
+    "Acumulado 12 meses (%)": "8,38%"
+  },
+  {
+    "Periodo": "2016/Mar",
+    "Valor": 1561.56,
+    "Mes (%)": "0,22%",
+    "Ano (%)": "0,56%",
+    "Acumulado 12 meses (%)": "8,96%"
+  },
+  {
+    "Periodo": "2016/Fev",
+    "Valor": 1558.16,
+    "Mes (%)": "0,14%",
+    "Ano (%)": "0,34%",
+    "Acumulado 12 meses (%)": "8,93%"
+  },
+  {
+    "Periodo": "2016/Jan",
+    "Valor": 1555.98,
+    "Mes (%)": "0,20%",
+    "Ano (%)": "0,20%",
+    "Acumulado 12 meses (%)": "9,12%"
+  },
+  {
+    "Periodo": "2015/Dez",
+    "Valor": 1552.9,
+    "Mes (%)": "0,48%",
+    "Ano (%)": "9,16%",
+    "Acumulado 12 meses (%)": "9,16%"
+  },
+  {
+    "Periodo": "2015/Nov",
+    "Valor": 1545.41,
+    "Mes (%)": "0,20%",
+    "Ano (%)": "8,63%",
+    "Acumulado 12 meses (%)": "8,79%"
+  },
+  {
+    "Periodo": "2015/Out",
+    "Valor": 1542.3,
+    "Mes (%)": "0,42%",
+    "Ano (%)": "8,41%",
+    "Acumulado 12 meses (%)": "8,78%"
+  },
+  {
+    "Periodo": "2015/Set",
+    "Valor": 1535.87,
+    "Mes (%)": "0,62%",
+    "Ano (%)": "7,96%",
+    "Acumulado 12 meses (%)": "8,56%"
+  },
+  {
+    "Periodo": "2015/Ago",
+    "Valor": 1526.37,
+    "Mes (%)": "0,17%",
+    "Ano (%)": "7,29%",
+    "Acumulado 12 meses (%)": "8,12%"
+  },
+  {
+    "Periodo": "2015/Jul",
+    "Valor": 1523.76,
+    "Mes (%)": "0,89%",
+    "Ano (%)": "7,11%",
+    "Acumulado 12 meses (%)": "8,18%"
+  },
+  {
+    "Periodo": "2015/Jun",
+    "Valor": 1510.35,
+    "Mes (%)": "4,17%",
+    "Ano (%)": "6,17%",
+    "Acumulado 12 meses (%)": "10,13%"
+  },
+  {
+    "Periodo": "2015/Mai",
+    "Valor": 1449.85,
+    "Mes (%)": "0,53%",
+    "Ano (%)": "1,91%",
+    "Acumulado 12 meses (%)": "8,65%"
+  },
+  {
+    "Periodo": "2015/Abr",
+    "Valor": 1442.14,
+    "Mes (%)": "0,63%",
+    "Ano (%)": "1,37%",
+    "Acumulado 12 meses (%)": "8,38%"
+  },
+  {
+    "Periodo": "2015/Mar",
+    "Valor": 1433.13,
+    "Mes (%)": "0,19%",
+    "Ano (%)": "0,74%",
+    "Acumulado 12 meses (%)": "8,09%"
+  },
+  {
+    "Periodo": "2015/Fev",
+    "Valor": 1430.39,
+    "Mes (%)": "0,31%",
+    "Ano (%)": "0,55%",
+    "Acumulado 12 meses (%)": "8,45%"
+  },
+  {
+    "Periodo": "2015/Jan",
+    "Valor": 1425.91,
+    "Mes (%)": "0,23%",
+    "Ano (%)": "0,23%",
+    "Acumulado 12 meses (%)": "8,51%"
+  },
+  {
+    "Periodo": "2014/Dez",
+    "Valor": 1422.63,
+    "Mes (%)": "0,15%",
+    "Ano (%)": "8,63%",
+    "Acumulado 12 meses (%)": "8,63%"
+  },
+  {
+    "Periodo": "2014/Nov",
+    "Valor": 1420.57,
+    "Mes (%)": "0,19%",
+    "Ano (%)": "8,48%",
+    "Acumulado 12 meses (%)": "0"
+  },
+  {
+    "Periodo": "2014/Out",
+    "Valor": 1417.82,
+    "Mes (%)": "0,21%",
+    "Ano (%)": "8,27%",
+    "Acumulado 12 meses (%)": "0"
+  },
+  {
+    "Periodo": "2014/Set",
+    "Valor": 1414.81,
+    "Mes (%)": "0,22%",
+    "Ano (%)": "8,04%",
+    "Acumulado 12 meses (%)": "0"
+  },
+  {
+    "Periodo": "2014/Ago",
+    "Valor": 1411.72,
+    "Mes (%)": "0,22%",
+    "Ano (%)": "7,80%",
+    "Acumulado 12 meses (%)": "0"
+  },
+  {
+    "Periodo": "2014/Jul",
+    "Valor": 1408.59,
+    "Mes (%)": "2,71%",
+    "Ano (%)": "7,56%",
+    "Acumulado 12 meses (%)": "0"
+  },
+  {
+    "Periodo": "2014/Jun",
+    "Valor": 1371.44,
+    "Mes (%)": "2,77%",
+    "Ano (%)": "4,72%",
+    "Acumulado 12 meses (%)": "0"
+  },
+  {
+    "Periodo": "2014/Mai",
+    "Valor": 1334.42,
+    "Mes (%)": "0,29%",
+    "Ano (%)": "1,90%",
+    "Acumulado 12 meses (%)": "0"
+  },
+  {
+    "Periodo": "2014/Abr",
+    "Valor": 1330.61,
+    "Mes (%)": "0,36%",
+    "Ano (%)": "1,61%",
+    "Acumulado 12 meses (%)": "0"
+  },
+  {
+    "Periodo": "2014/Mar",
+    "Valor": 1325.89,
+    "Mes (%)": "0,53%",
+    "Ano (%)": "1,25%",
+    "Acumulado 12 meses (%)": "0"
+  },
+  {
+    "Periodo": "2014/Fev",
+    "Valor": 1318.88,
+    "Mes (%)": "0,37%",
+    "Ano (%)": "0,71%",
+    "Acumulado 12 meses (%)": "0"
+  },
+  {
+    "Periodo": "2014/Jan",
+    "Valor": 1314.05,
+    "Mes (%)": "0,34%",
+    "Ano (%)": "0,34%",
+    "Acumulado 12 meses (%)": "0"
+  },
+  {
+    "Periodo": "2013/Dez",
+    "Valor": 1309.57,
+    "Mes (%)": "0",
+    "Ano (%)": "0",
+    "Acumulado 12 meses (%)": "0"
+  }
+]

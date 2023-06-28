@@ -1,3 +1,4 @@
+import { cubList } from './cubData';
 import { Component, Input, ViewChild } from '@angular/core';
 import { OnInit,AfterContentInit,AfterContentChecked,AfterViewChecked } from '@angular/core';
 
@@ -7,6 +8,8 @@ import { OnInit,AfterContentInit,AfterContentChecked,AfterViewChecked } from '@a
   styleUrls: ['./calculator.component.css']
 })
 export class CalculatorComponent implements OnInit,AfterContentChecked{
+cubValue!:number
+cubPropertyValue!:number
 propertyValue:number = 100000
 entryValuePercentage:number = 20;
 installmentPercentage:number = 40;
@@ -16,12 +19,24 @@ deliveryKeysPercentage:number = 0
 installmentsMultiplyer:number = 12
 annualinstallmentsMultiplyer:number = 1
 
+cubList:any = cubList
+
+calculatePropertyInCub():void{
+  this.propertyValue = this.cubPropertyValue * this.cubValue
+}
+
+calculateCubInProperty():void{
+  this.cubPropertyValue = this.propertyValue / this.cubValue
+}
+
 calculateValues():void {
   this.deliveryKeysPercentage = 100 - this.entryValuePercentage - this.installmentPercentage - this.annualInstallmentsPercentage
 }
 
 ngOnInit(): void {
+  this.cubValue = this.cubList[0].Valor
   this.calculateValues()
+  this.calculateCubInProperty()
 }
 
 ngAfterContentChecked(): void {

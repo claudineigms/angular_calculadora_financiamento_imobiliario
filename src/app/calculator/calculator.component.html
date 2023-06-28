@@ -1,17 +1,40 @@
 <div class="__container_calculator">
-  <div class="_calculator_property_value">
-    <span>Valor Propriedade
+  <div class="_calculator_value_manager">
+    <div class="_calculator_cub_selector">
+      <span>Período CUB</span>
+      <div>
+        <select
+        [(ngModel)]="cubValue"
+        (ngModelChange)="calculateCubInProperty()">
+          <option
+            *ngFor="let data of cubList; let i = index"
+            [value]="data.Valor"
+            [selected]="i === 0">
+            {{data.Periodo}}
+          </option>
+        </select>
+        <input value={{cubValue}} disabled="true">
+      </div>
+    </div>
 
-    </span>
-    <input type="number" [(ngModel)]="propertyValue">
+    <div class="_calculator_property_value">
+      <div>
+        <span>Valor Propriedade</span>
+        <input type="number" [(ngModel)]="propertyValue" (ngModelChange)="calculateCubInProperty()">
+      </div>
+      <div>
+      <span>Cub Propriedade</span>
+      <input type="number" [(ngModel)]="cubPropertyValue" (ngModelChange)="calculatePropertyInCub()">
+      </div>
+    </div>
   </div>
-  <app-value-selector
-    title="Entrada"
-    [(percentage)]="entryValuePercentage"
-    maxPercentage={{(entryValuePercentage+deliveryKeysPercentage)}}
-    [(totalAmount)]="propertyValue"
-  />
-  <app-value-selector-installments
+    <app-value-selector
+      title="Entrada"
+      [(percentage)]="entryValuePercentage"
+      maxPercentage={{(entryValuePercentage+deliveryKeysPercentage)}}
+      [(totalAmount)]="propertyValue"
+    />
+    <app-value-selector-installments
     title="Parcelas"
     [(percentage)]="installmentPercentage"
     [(totalAmount)]="propertyValue"

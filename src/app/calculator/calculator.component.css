@@ -1,0 +1,18 @@
+._calculator_cub_selector{
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+._calculator_property_value{
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+._calculator_property_value >div{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 9rem;
+}
