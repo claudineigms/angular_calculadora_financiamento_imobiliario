@@ -10,6 +10,7 @@ export class ValueSelectorInstallmentsComponent implements OnInit,AfterContentCh
   @Input()  title: string = "";
   @Input()  ValueBarNgIf: boolean|string= false
   @Input()  ValueStatusDisabled: boolean|string = false
+  @Input()  cubValue: number = 0
 
   @Input()  multiplier: number = 1;
   @Output() multiplierChange = new EventEmitter<number>();
@@ -19,6 +20,7 @@ export class ValueSelectorInstallmentsComponent implements OnInit,AfterContentCh
   @Output() percentageChange = new EventEmitter<number>();
   @Input()  maxPercentage!: number|string
             installment! : number|string;
+            cubInstallment! : number|string;
             option!:number;
 
   ngOnInit(): void {
@@ -32,7 +34,9 @@ export class ValueSelectorInstallmentsComponent implements OnInit,AfterContentCh
   }
 
   ngAfterViewChecked():void{
-    this.installment = ((this.totalAmount*(this.percentage/100))/this.option).toLocaleString("pt-BR",{ style: "currency" , currency:"BRL"});
+    let installment = ((this.totalAmount*(this.percentage/100))/this.option)
+    this.installment = installment.toLocaleString("pt-BR",{ style: "currency" , currency:"BRL"});
+    this.cubInstallment = Number((installment/this.cubValue).toFixed(5));
   }
 }
 

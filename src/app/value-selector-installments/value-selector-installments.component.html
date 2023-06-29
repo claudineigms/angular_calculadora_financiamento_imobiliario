@@ -17,9 +17,15 @@
         [(ngModel)]="installment"
         disabled = true
         >
+        <input
+        class="value_selector_valor_parcela"
+        [(ngModel)]="cubInstallment"
+        disabled = true
+        >
     </div>
   </div>
   <app-value-selector
+    [cubValue]="cubValue"
     [(totalAmount)]="totalAmount"
     [(percentage)]="percentage"
     maxPercentage={{maxPercentage}}

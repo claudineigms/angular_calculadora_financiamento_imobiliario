@@ -8,7 +8,7 @@ import { OnInit,AfterContentInit,AfterContentChecked,AfterViewChecked } from '@a
   styleUrls: ['./calculator.component.css']
 })
 export class CalculatorComponent implements OnInit,AfterContentChecked{
-cubValue!:number
+cubValueGlobal!:number
 cubPropertyValue!:number
 propertyValue:number = 100000
 entryValuePercentage:number = 20;
@@ -22,11 +22,11 @@ annualinstallmentsMultiplyer:number = 1
 cubList:any = cubList
 
 calculatePropertyInCub():void{
-  this.propertyValue = this.cubPropertyValue * this.cubValue
+  this.propertyValue = this.cubPropertyValue * this.cubValueGlobal
 }
 
 calculateCubInProperty():void{
-  this.cubPropertyValue = this.propertyValue / this.cubValue
+  this.cubPropertyValue = Number((this.propertyValue / this.cubValueGlobal).toFixed(5))
 }
 
 calculateValues():void {
@@ -34,7 +34,7 @@ calculateValues():void {
 }
 
 ngOnInit(): void {
-  this.cubValue = this.cubList[0].Valor
+  this.cubValueGlobal = this.cubList[0].Valor
   this.calculateValues()
   this.calculateCubInProperty()
 }

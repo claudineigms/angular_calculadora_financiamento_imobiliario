@@ -4,7 +4,7 @@
       <span>Período CUB</span>
       <div>
         <select
-        [(ngModel)]="cubValue"
+        [(ngModel)]="cubValueGlobal"
         (ngModelChange)="calculateCubInProperty()">
           <option
             *ngFor="let data of cubList; let i = index"
@@ -13,7 +13,7 @@
             {{data.Periodo}}
           </option>
         </select>
-        <input value={{cubValue}} disabled="true">
+        <input value={{cubValueGlobal}} disabled="true">
       </div>
     </div>
 
@@ -24,18 +24,20 @@
       </div>
       <div>
       <span>Cub Propriedade</span>
-      <input type="number" [(ngModel)]="cubPropertyValue" (ngModelChange)="calculatePropertyInCub()">
+      <input type="number" [(ngModel)]="cubPropertyValue" (ngModelChange)="calculatePropertyInCub()" step="0.01">
       </div>
     </div>
   </div>
     <app-value-selector
       title="Entrada"
+      [cubValue]="cubValueGlobal"
       [(percentage)]="entryValuePercentage"
       maxPercentage={{(entryValuePercentage+deliveryKeysPercentage)}}
       [(totalAmount)]="propertyValue"
     />
     <app-value-selector-installments
     title="Parcelas"
+    [cubValue]="cubValueGlobal"
     [(percentage)]="installmentPercentage"
     [(totalAmount)]="propertyValue"
     [(multiplier)]="installmentsMultiplyer"
@@ -43,6 +45,7 @@
   />
   <app-value-selector-installments
     title="Balões"
+    [cubValue]="cubValueGlobal"
     [(percentage)]="annualInstallmentsPercentage"
     [(totalAmount)]="propertyValue"
     [(multiplier)]="annualinstallmentsMultiplyer"
@@ -50,6 +53,7 @@
   />
   <app-value-selector
     title="Entrega das Chaves"
+    [cubValue]="cubValueGlobal"
     [(percentage)]="deliveryKeysPercentage"
     [(totalAmount)]="propertyValue"
     [ValueBarNgIf]='false'

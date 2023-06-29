@@ -4,7 +4,34 @@
   flex-direction: column;
 }
 
-.value_selector
+.selector_input{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 .750rem;
+}
+
+@media (max-width: 800px) {
+  .selector_input{
+    margin: 0 0.1rem;
+  }
+}
+
+.selector_input > span{
+  background-color: white;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 0 0.5rem;
+  height: 1.15rem;
+}
+.selector_input > input{
+  background-color: white;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 0 0.5rem;
+  height: 1rem;
+}
+
 
 .__container_value_selector > strong{
   display: flex;
@@ -19,6 +46,7 @@
 .value_selector_range{
   width: 100%;
 }
+
 .value_selector_input{
   width: 100%;
 }
