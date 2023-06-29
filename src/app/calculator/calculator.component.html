@@ -35,6 +35,7 @@
       maxPercentage={{(entryValuePercentage+deliveryKeysPercentage)}}
       [(totalAmount)]="propertyValue"
     />
+    <hr>
     <app-value-selector-installments
     title="Parcelas"
     [cubValue]="cubValueGlobal"
@@ -42,16 +43,18 @@
     [(totalAmount)]="propertyValue"
     [(multiplier)]="installmentsMultiplyer"
     maxPercentage={{(installmentPercentage+deliveryKeysPercentage)}}
-  />
-  <app-value-selector-installments
+    />
+    <hr>
+    <app-value-selector-installments
     title="Balões"
     [cubValue]="cubValueGlobal"
     [(percentage)]="annualInstallmentsPercentage"
     [(totalAmount)]="propertyValue"
     [(multiplier)]="annualinstallmentsMultiplyer"
     maxPercentage={{(annualInstallmentsPercentage+deliveryKeysPercentage)}}
-  />
-  <app-value-selector
+    />
+    <hr>
+    <app-value-selector
     title="Entrega das Chaves"
     [cubValue]="cubValueGlobal"
     [(percentage)]="deliveryKeysPercentage"
