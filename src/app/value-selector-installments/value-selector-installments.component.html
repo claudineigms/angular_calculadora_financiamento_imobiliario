@@ -4,6 +4,7 @@
     <div class="parcelamento">
       <span>Parcelas</span>
       <select
+        class="selector_input_legend"
         id="parcelas"
         [(ngModel)]="option"
       >
@@ -13,12 +14,13 @@
         </option>
       </select>
       <input
-        class="value_selector_valor_parcela"
+        class="selector_input_value"
+        id="mid"
         [(ngModel)]="installment"
         disabled = true
         >
         <input
-        class="value_selector_valor_parcela"
+        class="selector_input_value"
         [(ngModel)]="cubInstallment"
         disabled = true
         >

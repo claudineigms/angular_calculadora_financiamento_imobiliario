@@ -4,6 +4,7 @@
       <span>Período CUB</span>
       <div>
         <select
+        class="selector_input_legend"
         [(ngModel)]="cubValueGlobal"
         (ngModelChange)="calculateCubInProperty()">
           <option
@@ -13,18 +14,18 @@
             {{data.Periodo}}
           </option>
         </select>
-        <input value={{cubValueGlobal}} disabled="true">
+        <input class="selector_input_value" value={{cubValueGlobal}} disabled="true">
       </div>
     </div>
 
     <div class="_calculator_property_value">
       <div>
-        <span>Valor Propriedade</span>
-        <input type="number" [(ngModel)]="propertyValue" (ngModelChange)="calculateCubInProperty()">
+        <span class="selector_input_legend">Valor Propriedade</span>
+        <input class="selector_input_value" type="number" [(ngModel)]="propertyValue" (ngModelChange)="calculateCubInProperty()">
       </div>
       <div>
-      <span>Cub Propriedade</span>
-      <input type="number" [(ngModel)]="cubPropertyValue" (ngModelChange)="calculatePropertyInCub()" step="0.01">
+      <span class="selector_input_legend">Cub Propriedade</span>
+      <input class="selector_input_value" type="number" [(ngModel)]="cubPropertyValue" (ngModelChange)="calculatePropertyInCub()" step="0.01">
       </div>
     </div>
   </div>

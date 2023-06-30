@@ -3,7 +3,7 @@ import { Component, EventEmitter, Input, Output, OnInit,AfterContentChecked, Aft
 @Component({
   selector: 'app-value-selector-installments',
   templateUrl: './value-selector-installments.component.html',
-  styleUrls: ['./value-selector-installments.component.css']
+  styleUrls: ['./value-selector-installments.component.css','../app.component.css']
 })
 
 export class ValueSelectorInstallmentsComponent implements OnInit,AfterContentChecked, AfterViewChecked{

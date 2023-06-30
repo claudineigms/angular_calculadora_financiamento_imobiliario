@@ -4,10 +4,6 @@
   flex-direction: column;
 }
 
-.value_selector_valor_parcela{
-  width: 5.5rem;
-}
-
 .value_selector_title_and_stallments{
   display: flex;
   flex-direction: row;
@@ -18,6 +14,19 @@
 .__container_value_selector > strong{
   display: flex;
   justify-content: baseline;
+}
+
+.selector_input_value{
+  width: 5rem;
+}
+
+#parcelas{
+  height: 24px;
+}
+
+#mid{
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .value_selector_inputs{

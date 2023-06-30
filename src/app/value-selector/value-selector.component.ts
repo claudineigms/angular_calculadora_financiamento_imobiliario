@@ -3,7 +3,7 @@ import { Component, EventEmitter, Input, Output, AfterContentChecked } from '@an
 @Component({
   selector: 'app-value-selector',
   templateUrl: './value-selector.component.html',
-  styleUrls: ['./value-selector.component.css']
+  styleUrls: ['./value-selector.component.css','../app.component.css']
 })
 export class ValueSelectorComponent implements AfterContentChecked{
   @Input()  title: string = "";
