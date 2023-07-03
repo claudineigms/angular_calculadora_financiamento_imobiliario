@@ -1,11 +1,11 @@
-import { Component, EventEmitter, Input, Output, AfterContentChecked } from '@angular/core';
+import { Component, EventEmitter, Input, Output, AfterContentChecked, OnInit, ElementRef} from '@angular/core';
 
 @Component({
   selector: 'app-value-selector',
   templateUrl: './value-selector.component.html',
   styleUrls: ['./value-selector.component.css','../app.component.css']
 })
-export class ValueSelectorComponent implements AfterContentChecked{
+export class ValueSelectorComponent implements AfterContentChecked,OnInit{
   @Input()  title: string = "";
   @Input()  ValueBarNgIf: boolean|string= true
   @Input()  ValueStatusDisabled: boolean|string= false
@@ -19,6 +19,8 @@ export class ValueSelectorComponent implements AfterContentChecked{
   @Output() totalAmountChange = new EventEmitter<number>();
             installmentValue!: number;
 
+  constructor(private elementRef:ElementRef){}
+
   calculateCub():void{
     this.cubInstallmentValue = Number((this.installmentValue/this.cubValue).toFixed(5))
   }
@@ -30,9 +32,9 @@ export class ValueSelectorComponent implements AfterContentChecked{
 
   calculatePercentage():void{
     console.log(this.installmentValue)
-    if (this.installmentValue > this.totalAmount*(Number(this.maxPercentage)/100)){
-      this.installmentValue = this.totalAmount*(Number(this.maxPercentage)/100)
-    }
+    console.log((this.installmentValue > this.totalAmount*(Number(this.maxPercentage)/100)))
+    this.installmentValue = (this.installmentValue > this.totalAmount*(Number(this.maxPercentage)/100)) ? this.totalAmount*(Number(this.maxPercentage)/100) : this.installmentValue
+
     this.percentage = Number(((this.installmentValue/this.totalAmount)*100).toFixed(5))
     this.percentageChange.emit(this.percentage)
   }
@@ -42,5 +44,12 @@ export class ValueSelectorComponent implements AfterContentChecked{
     this.installmentValue = Number((this.totalAmount * (this.percentage / 100)).toFixed(2))
     this.totalAmountChange.emit(this.totalAmount)
     this.percentageChange.emit(this.percentage)
+  }
+
+  ngOnInit(): void {
+    this.elementRef.nativeElement.querySelector.getElementByClassName("selector_input_value")
+      .addEventListener("change", function() {
+        console.log("test")
+    });
   }
 }
