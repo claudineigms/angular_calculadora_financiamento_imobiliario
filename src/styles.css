@@ -7,12 +7,13 @@
 
 body {
   margin: auto;
-  background-image:url('src/assets/itapema.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
+  background:url('src/assets/itapema.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100%;
 }
+
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

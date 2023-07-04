@@ -11,6 +11,12 @@
   justify-content: space-between;
 }
 
+@media (max-width: 500px) {
+  .value_selector_title_and_stallments{
+    flex-direction: column;
+    }
+}
+
 .__container_value_selector > strong{
   display: flex;
   justify-content: baseline;

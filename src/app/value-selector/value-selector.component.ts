@@ -41,7 +41,7 @@ export class ValueSelectorComponent implements AfterContentChecked,OnInit{
 
   ngAfterContentChecked(): void {
     this.calculateCub()
-    this.installmentValue = Number((this.totalAmount * (this.percentage / 100)).toFixed(2))
+    this.installmentValue = Number((this.totalAmount * (this.percentage / 100)).toFixed(0))
     this.totalAmountChange.emit(this.totalAmount)
     this.percentageChange.emit(this.percentage)
   }
