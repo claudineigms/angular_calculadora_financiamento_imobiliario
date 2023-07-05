@@ -3,16 +3,13 @@
     <strong>{{title}}</strong>
     <div class="parcelamento">
       <span>Parcelas</span>
-      <select
+      <input
+        type="number"
         class="selector_input_legend"
         id="parcelas"
         [(ngModel)]="option"
+        (ngModelChange)="calculateInstallment()"
       >
-        <option
-          *ngFor="let number of [].constructor(20);let i = index">
-            {{(i + 1) * multiplier}}
-        </option>
-      </select>
       <input
         class="selector_input_value"
         id="mid"

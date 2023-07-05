@@ -42,7 +42,7 @@
     [cubValue]="cubValueGlobal"
     [(percentage)]="installmentPercentage"
     [(totalAmount)]="propertyValue"
-    [(multiplier)]="installmentsMultiplyer"
+    [multiplier]="10"
     maxPercentage={{(installmentPercentage+deliveryKeysPercentage)}}
     />
     <hr>
@@ -51,7 +51,6 @@
     [cubValue]="cubValueGlobal"
     [(percentage)]="annualInstallmentsPercentage"
     [(totalAmount)]="propertyValue"
-    [(multiplier)]="annualinstallmentsMultiplyer"
     maxPercentage={{(annualInstallmentsPercentage+deliveryKeysPercentage)}}
     />
     <hr>

@@ -33,10 +33,14 @@ export class ValueSelectorInstallmentsComponent implements OnInit,AfterContentCh
     this.percentageChange.emit(this.percentage)
   }
 
-  ngAfterViewChecked():void{
+  calculateInstallment():void{
     let installment = ((this.totalAmount*(this.percentage/100))/this.option)
     this.installment = installment.toLocaleString("pt-BR",{ style: "currency" , currency:"BRL"});
     this.cubInstallment = Number((installment/this.cubValue).toFixed(5));
+  }
+
+  ngAfterViewChecked():void{
+    this.calculateInstallment()
   }
 }
 

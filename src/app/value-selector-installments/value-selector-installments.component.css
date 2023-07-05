@@ -23,11 +23,12 @@
 }
 
 .selector_input_value{
-  width: 5rem;
+  max-width: 5rem;
 }
 
 #parcelas{
-  height: 24px;
+  min-width: 1.5rem;
+  max-width: 3rem;
 }
 
 #mid{
