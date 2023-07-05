@@ -5,7 +5,7 @@ import { Component, EventEmitter, Input, Output, AfterContentChecked, OnInit, El
   templateUrl: './value-selector.component.html',
   styleUrls: ['./value-selector.component.css','../app.component.css']
 })
-export class ValueSelectorComponent implements AfterContentChecked,OnInit{
+export class ValueSelectorComponent implements AfterContentChecked{
   @Input()  title: string = "";
   @Input()  ValueBarNgIf: boolean|string= true
   @Input()  ValueStatusDisabled: boolean|string= false
@@ -46,10 +46,4 @@ export class ValueSelectorComponent implements AfterContentChecked,OnInit{
     this.percentageChange.emit(this.percentage)
   }
 
-  ngOnInit(): void {
-    this.elementRef.nativeElement.querySelector.getElementByClassName("selector_input_value")
-      .addEventListener("change", function() {
-        console.log("test")
-    });
-  }
 }
