@@ -5,7 +5,8 @@ import { Component, EventEmitter, Input, Output, AfterContentChecked, OnInit, El
   templateUrl: './value-selector.component.html',
   styleUrls: ['./value-selector.component.css','../app.component.css']
 })
-export class ValueSelectorComponent implements AfterContentChecked{
+export class ValueSelectorComponent implements AfterContentChecked, OnInit{
+  timeout: any = null;
   @Input()  title: string = "";
   @Input()  ValueBarNgIf: boolean|string= true
   @Input()  ValueStatusDisabled: boolean|string= false
@@ -19,31 +20,38 @@ export class ValueSelectorComponent implements AfterContentChecked{
   @Output() totalAmountChange = new EventEmitter<number>();
             installmentValue!: number;
 
-  constructor(private elementRef:ElementRef){}
-
-  calculateCub():void{
-    this.cubInstallmentValue = Number((this.installmentValue/this.cubValue).toFixed(5))
+  ngOnInit():void{
+    this.installmentValue = Number((this.totalAmount * (this.percentage / 100)).toFixed(0))
+    this.calculateCub()
   }
 
-  calculateInstallmentValueByCub():void{
+  calculateCub():void{this.cubInstallmentValue = Number((this.installmentValue/this.cubValue).toFixed(5))}
+
+  calculatePercentage():void{
+    this.installmentValue = (this.installmentValue > this.totalAmount*(Number(this.maxPercentage)/100)) ? this.totalAmount*(Number(this.maxPercentage)/100) : this.installmentValue
+
+    this.percentage = Number(((this.installmentValue/this.totalAmount)*100).toFixed(5))
+    this.calculateCub()
+  }
+
+
+  calculateInstallmentValueByCub(event: any){
+    clearTimeout(this.timeout);
+    var $this = this;
+    this.timeout = setTimeout(function () {
+      if (event.keyCode != 13) {
+        $this.executeListing();
+      }
+    }, 1000);
+  }
+
+  executeListing(){
     this.installmentValue = this.cubInstallmentValue * this.cubValue
     this.calculatePercentage()
   }
 
-  calculatePercentage():void{
-    console.log(this.installmentValue)
-    console.log((this.installmentValue > this.totalAmount*(Number(this.maxPercentage)/100)))
-    this.installmentValue = (this.installmentValue > this.totalAmount*(Number(this.maxPercentage)/100)) ? this.totalAmount*(Number(this.maxPercentage)/100) : this.installmentValue
-
-    this.percentage = Number(((this.installmentValue/this.totalAmount)*100).toFixed(5))
-    this.percentageChange.emit(this.percentage)
-  }
-
   ngAfterContentChecked(): void {
-    this.calculateCub()
-    this.installmentValue = Number((this.totalAmount * (this.percentage / 100)).toFixed(0))
     this.totalAmountChange.emit(this.totalAmount)
     this.percentageChange.emit(this.percentage)
   }
-
 }

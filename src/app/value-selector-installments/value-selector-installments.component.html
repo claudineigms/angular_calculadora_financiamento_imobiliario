@@ -8,18 +8,18 @@
         class="selector_input_legend"
         id="parcelas"
         [(ngModel)]="option"
-        (ngModelChange)="calculateInstallment()"
+        (ngModelChange)="calculateInstallments()"
       >
       <input
         class="selector_input_value"
         id="mid"
         [(ngModel)]="installment"
-        disabled = true
+        (ngModelChange)="calculateByInstallment()"
         >
         <input
         class="selector_input_value"
         [(ngModel)]="cubInstallment"
-        disabled = true
+        disabled=True
         >
     </div>
   </div>

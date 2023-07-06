@@ -36,7 +36,7 @@
           class="selector_input_value"
           type="number"
           [(ngModel)]="cubInstallmentValue"
-          (ngModelChange)="calculateInstallmentValueByCub()"
+          (ngModelChange)="calculateInstallmentValueByCub($event)"
           disabled={{ValueStatusDisabled}}
         />
       </div>

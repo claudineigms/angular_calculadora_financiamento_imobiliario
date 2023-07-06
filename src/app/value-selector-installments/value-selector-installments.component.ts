@@ -13,7 +13,6 @@ export class ValueSelectorInstallmentsComponent implements OnInit,AfterContentCh
   @Input()  cubValue: number = 0
 
   @Input()  multiplier: number = 1;
-  @Output() multiplierChange = new EventEmitter<number>();
   @Input()  totalAmount!: number;
   @Output() totalAmountChange = new EventEmitter<number>();
   @Input()  percentage!: number;
@@ -25,22 +24,35 @@ export class ValueSelectorInstallmentsComponent implements OnInit,AfterContentCh
 
   ngOnInit(): void {
     this.option = this.multiplier * 10
+    this.calculateInstallment()
+    this.calculateCubInstallment()
   }
 
   ngAfterContentChecked(): void {
     this.totalAmountChange.emit(this.totalAmount)
-    this.multiplierChange.emit(this.multiplier)
     this.percentageChange.emit(this.percentage)
   }
 
-  calculateInstallment():void{
-    let installment = ((this.totalAmount*(this.percentage/100))/this.option)
-    this.installment = installment.toLocaleString("pt-BR",{ style: "currency" , currency:"BRL"});
-    this.cubInstallment = Number((installment/this.cubValue).toFixed(5));
+  calculateInstallment():void{this.installment = ((this.totalAmount*(this.percentage/100))/this.option)}
+  calculateCubInstallment():void{this.cubInstallment = Number((Number(this.installment)/this.cubValue).toFixed(5));}
+
+  calculateInstallments():void{
+    if (typeof this.option === 'number'){
+      this.calculateInstallment()
+      this.calculateCubInstallment()
+    }else{
+      this.installment = 0
+      this.cubInstallment = 0
+    }
+  }
+
+  calculateByInstallment():void{
+    this.calculateCubInstallment()
+    this.percentage = ((Number(this.installment)*this.option)/this.totalAmount)*100
   }
 
   ngAfterViewChecked():void{
-    this.calculateInstallment()
+    // this.calculateInstallment()
+    // this.calculateCubInstallment()
   }
 }
-
