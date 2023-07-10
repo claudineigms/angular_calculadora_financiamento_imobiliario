@@ -52,7 +52,7 @@ export class ValueSelectorInstallmentsComponent implements OnInit,AfterContentCh
   }
 
   ngAfterViewChecked():void{
-    // this.calculateInstallment()
-    // this.calculateCubInstallment()
+    this.calculateInstallment()
+    this.calculateCubInstallment()
   }
 }

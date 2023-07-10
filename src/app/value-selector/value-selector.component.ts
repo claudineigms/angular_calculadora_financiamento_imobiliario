@@ -20,16 +20,17 @@ export class ValueSelectorComponent implements AfterContentChecked, OnInit{
   @Output() totalAmountChange = new EventEmitter<number>();
             installmentValue!: number;
 
+  calculateCub():void{this.cubInstallmentValue = Number((this.installmentValue/this.cubValue).toFixed(5))}
+  calculateInstallment():void{
+    this.installmentValue = (this.installmentValue > this.totalAmount*(Number(this.maxPercentage)/100)) ? this.installmentValue = Number((this.totalAmount * (this.percentage / 100)).toFixed(0)) : this.installmentValue
+  }
+
   ngOnInit():void{
-    this.installmentValue = Number((this.totalAmount * (this.percentage / 100)).toFixed(0))
+    this.installmentValue = this.totalAmount*(Number(this.maxPercentage)/100)
     this.calculateCub()
   }
 
-  calculateCub():void{this.cubInstallmentValue = Number((this.installmentValue/this.cubValue).toFixed(5))}
-
   calculatePercentage():void{
-    this.installmentValue = (this.installmentValue > this.totalAmount*(Number(this.maxPercentage)/100)) ? this.totalAmount*(Number(this.maxPercentage)/100) : this.installmentValue
-
     this.percentage = Number(((this.installmentValue/this.totalAmount)*100).toFixed(5))
     this.calculateCub()
   }
@@ -51,6 +52,8 @@ export class ValueSelectorComponent implements AfterContentChecked, OnInit{
   }
 
   ngAfterContentChecked(): void {
+    this.installmentValue = Number((this.totalAmount*(Number(this.percentage)/100)).toFixed(0))
+    this.calculateCub()
     this.totalAmountChange.emit(this.totalAmount)
     this.percentageChange.emit(this.percentage)
   }

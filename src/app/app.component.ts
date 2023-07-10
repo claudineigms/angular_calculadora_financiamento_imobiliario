@@ -1,11 +1,19 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, ElementRef, ViewChild, OnInit} from '@angular/core';
 import { SwUpdate } from '@angular/service-worker';
+
+declare var require: any;
+
+import * as pdfMake from "pdfmake/build/pdfmake";
+import * as pdfFonts from "pdfmake/build/vfs_fonts";
+const htmlToPdfmake = require("html-to-pdfmake");
+(pdfMake as any).vfs = pdfFonts.pdfMake.vfs;
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent implements OnInit{
   title = 'real_estate_istallment_calculator';
 
@@ -21,4 +29,14 @@ export class AppComponent implements OnInit{
     }
   }
 
+  @ViewChild('mainApp')
+  pdfTable!: ElementRef;
+
+  public downloadAsPDF() {
+    const pdfTable = this.pdfTable.nativeElement;
+    var html = htmlToPdfmake(pdfTable.innerHTML);
+    const documentDefinition = { content: html };
+    pdfMake.createPdf(documentDefinition).download();
+
+  }
 }
